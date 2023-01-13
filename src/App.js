@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// react arrow function component  with export- rafce
+// Export and import : part of ecmascript 2015 
+//<React.fragment> needs importing react  
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import React from 'react';
+import Resturant from './Component/Basics/Resturant'
+const App = () => {
+  return <div>
+      <Resturant/>
+  </div>
 }
-
 export default App;
+// bcz of default export we not need to write .js after file name.
+
+
+
+
+
+
+
+// const MyName= () => {
+//   return <h1> Mitali</h1>
+// }
+// const App = () =>{
+//   return React.createElement("h1", {}, "Hello World");
+// }
