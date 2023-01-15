@@ -28,6 +28,7 @@ const MenuCard = ({ menuData }) => {
           const [car, truck, suv] = vehicles; */}
 
         return(
+          
           <>
           <div className="card-container" key={id}>
       <div className='card'>
