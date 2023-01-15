@@ -3,8 +3,26 @@ import "./style.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
 
+
+const uniqueList = [... new Set(Menu.map((curElem) => {  // Ecmascript-2019  => Datastruture =>  The Set object lets you store unique values of any type.
+  return curElem.category;
+}))];
+console.log(uniqueList);
+// output :  ['Breakfast', 'Lunch', 'Evening', 'Dinner']
+
+// const uniqueList = Menu.map((curElem) => {  // Ecmascript-2019  => Datastruture =>  The Set object lets you store unique values of any type.
+//   return curElem.category;
+// })
+//console.log(uniqueList)
+// Output: It is an Object inside Array
+// 0: Breakfast"
+// 1:"Lunch"
+// 2: "Evening"
+// 3: "Dinner"
+
+
 const Resturant = () => {
-  const [menuData, setMenuData] = React.useState(Menu);
+  const [menuData, setMenuData] = React.useState(Menu); // We can also write => import React, {useState} from "react";
   //console.log(menuData);
 
   const filterItem = (category) => {
