@@ -28,13 +28,13 @@ const MenuCard = ({ menuData }) => {
           const [car, truck, suv] = vehicles; */}
 
         return(
-          
+
           <>
           <div className="card-container" key={id}>
       <div className='card'>
       <div className='card-body'>
         <span className='card-number card-circle subtle'>{id}</span>
-        <span className='card-author subtle'>{name}</span>
+        <span className='card-author subtle'>{category}</span>
         <h2 className='card-title'>{name}</h2>
         <span className='card-description subtle'>
         {description}

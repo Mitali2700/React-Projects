@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
-
+import Navbar from './Navbar';
 
 const uniqueList = [... new Set(Menu.map((curElem) => {  // Ecmascript-2019  => Datastruture =>  The Set object lets you store unique values of any type.
   return curElem.category;
@@ -24,6 +24,7 @@ console.log(uniqueList);
 const Resturant = () => {
   const [menuData, setMenuData] = React.useState(Menu); // We can also write => import React, {useState} from "react";
   //console.log(menuData);
+  const [menuList, setMenuList] = React.useState(uniqueList);
 
   const filterItem = (category) => {
     const updatedList = Menu.filter((curElem)=>{
@@ -34,17 +35,7 @@ const Resturant = () => {
 
   return  (
   <>
-
-    <nav className='navbar'>
-      <div className='btn-group'>
-      <button className='btn-group__item' onClick={() => filterItem("Breakfast")}>Breakfast</button>
-      <button className='btn-group__item' onClick={() => filterItem("Lunch")}>Lunch</button>
-      <button className='btn-group__item' onClick={() => filterItem("Evening")}>Evening</button>
-      <button className='btn-group__item' onClick={() => filterItem("Dinner")}>Dinner</button>
-      <button className='btn-group__item' onClick={() => setMenuData(Menu)}>All</button>
-      </div>
-    </nav>
-
+    <Navbar filterItem={filterItem} menuList={menuList} />
     <MenuCard menuData={ menuData } /> 
     {/* Here we are sending the prox. */}
   </>
