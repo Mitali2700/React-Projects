@@ -5,11 +5,10 @@ const Navbar = ({filterItem, menuList}) => {
     <>
         <nav className='navbar'>
       <div className='btn-group'>
-
         {
-          menuList.map(() => {
+          menuList.map((curElem) => {
             return(
-              <button className='btn-group__item' onClick={() => filterItem("Breakfast")}>Breakfast</button>
+              <button className='btn-group__item' onClick={() => filterItem(curElem)}>{curElem}</button>
             )
           })
         }

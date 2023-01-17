@@ -6,7 +6,9 @@ import Navbar from './Navbar';
 
 const uniqueList = [... new Set(Menu.map((curElem) => {  // Ecmascript-2019  => Datastruture =>  The Set object lets you store unique values of any type.
   return curElem.category;
-}))];
+})),
+"All",
+];
 console.log(uniqueList);
 // output :  ['Breakfast', 'Lunch', 'Evening', 'Dinner']
 
@@ -27,6 +29,12 @@ const Resturant = () => {
   const [menuList, setMenuList] = React.useState(uniqueList);
 
   const filterItem = (category) => {
+
+    if(category ==="All"){
+      setMenuData(Menu);
+      return;
+    }
+
     const updatedList = Menu.filter((curElem)=>{
       return curElem.category === category;
     })

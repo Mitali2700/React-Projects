@@ -4,10 +4,14 @@
 
 
 import React from 'react';
-import Resturant from './Component/Basics/Resturant'
+import Resturant from './Component/Basics/Resturant';
+import UseState from './Component/Hooks/useState';
+import UseEffect from './Component/Hooks/useEffect';
 const App = () => {
   return <div>
-      <Resturant/>
+      {/* <UseState /> */}
+      {/* <Resturant/> */}
+      <UseEffect />
   </div>
 }
 export default App;
