@@ -1,9 +1,20 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import "./style.css";
 
 const UseEffect = () => {
   const initialData = 0;
-  const [myNum, setMyNum] = React.useEffect(initialData);
+  const [myNum, setMyNum] = useState(initialData);
+
+  useEffect(() => {
+    document.title = `Orders(${myNum})`;
+    console.log('Hi');
+    // Whatsapp circular message notification counter
+  })
+  
+//   useEffect(() => {
+//     console.log('Hi');
+//   },[])
+// Bcz of array dependency(empty brackets) it will count only once 
 
   return (
     <>
@@ -22,3 +33,5 @@ const UseEffect = () => {
 };
 
 export default UseEffect;
+
+// UseEffect - changes within sec
