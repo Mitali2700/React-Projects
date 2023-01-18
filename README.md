@@ -1,4 +1,4 @@
-<H1 align='center'>Restraunt Menu</H1>
+<H1 align='center'>React Projects</H1>
 
 # Getting Started with Create React App
 
@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Restraunt Menu
+### React Projects
