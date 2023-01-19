@@ -10,15 +10,15 @@ import React from 'react';
 // // import UseEffect from './Component/Hooks/useEffect';
 //import UseReducer from './Component/Hooks/useReducer';
 
-import Todo from './Component/todo';
+import Todo from './Component/todoList/todo';
 const App = () => {
-  return <div>
+  return <>
       {/* <UseState /> */}
       {/* <Resturant/> */}
       {/* <UseEffect /> */}
       {/* <UseReducer /> */}
       <Todo />
-  </div>
+  </>
 }
 export default App;
 // bcz of default export we not need to write .js after file name.

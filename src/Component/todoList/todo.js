@@ -16,11 +16,18 @@ const Todo = () => {
                     placeholder='✍️ Add Items' 
                     className="form-control"
                 />
+                <i className="fa fa-plus add-btn"></i>
+                </div>
+                
+                
+                
+                <div className='showItems'>
+                    <button className="btn effect04" data-sm-link-text="Remove All">CHECK LIST</button>
                 </div>
             </div>
         </div>
     </>
-  )
+  );
 }
 
 export default Todo
