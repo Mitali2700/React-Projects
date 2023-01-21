@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: #000;
 }
 
 .main-div {
@@ -169,16 +170,19 @@ input:focus {
 }
 
 .btn {
+  background-color: #000;
+  color: #fff;
   letter-spacing: 0.1em;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 45px;
   max-width: 160px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
+  border-color:rgb(255, 215, 94); 
 }
 .btn:hover {
   text-decoration: none;
@@ -187,7 +191,8 @@ input:focus {
 .effect04 {
   --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
   display: var(--uismLinkDisplay);
-  color: #000;
+  color: rgb(255, 215, 94);
+  font-weight: bold;
   outline: solid 2px #000;
   position: relative;
   transition-duration: 0.4s;
@@ -202,7 +207,7 @@ input:focus {
 }
 
 .effect04:hover {
-  background-color: rgb(85, 41, 220);
+  background-color: rgb(255, 215, 94);
 }
 
 .effect04:hover span {
@@ -212,7 +217,8 @@ input:focus {
 
 .effect04::before {
   content: attr(data-sm-link-text);
-  color: #fff;
+  color: #000;
+  font-weight:bolder;
   position: absolute;
   left: 0;
   right: 0;
