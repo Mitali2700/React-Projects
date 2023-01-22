@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./style.css";
 
 const Todo = () => {
+    const[ inputdata, setInputData]= useState("")
+
   return (
     <>
         <div className="main_div">
@@ -15,6 +17,8 @@ const Todo = () => {
                     type ="text"
                     placeholder='✍️ Add Items' 
                     className="form-control"
+                    value={inputdata}
+                    
                 />
                 <i className="fa fa-plus add-btn"></i>
                 </div>

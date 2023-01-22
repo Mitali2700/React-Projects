@@ -4,7 +4,7 @@
 
 
 import React from 'react';
-// import Resturant from './Component/Basics/Resturant';
+import Resturant from './Component/Basics/Resturant';
 
 // // import UseState from './Component/Hooks/useState';
 // // import UseEffect from './Component/Hooks/useEffect';
@@ -14,10 +14,10 @@ import Todo from './Component/todoList/todo';
 const App = () => {
   return <>
       {/* <UseState /> */}
-      {/* <Resturant/> */}
+      <Resturant/>
       {/* <UseEffect /> */}
       {/* <UseReducer /> */}
-      <Todo />
+      {/* <Todo /> */}
   </>
 }
 export default App;
